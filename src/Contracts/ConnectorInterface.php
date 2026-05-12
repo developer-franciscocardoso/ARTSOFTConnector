@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Contracts;
+namespace FranciscoCardoso\ArtsoftConnector\Contracts;
 
 interface ConnectorInterface
 {

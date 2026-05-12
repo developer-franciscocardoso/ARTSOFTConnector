@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\DTO\Output;
+namespace FranciscoCardoso\ArtsoftConnector\DTO\Output;
 
 final readonly class RequestResultDTO
 {

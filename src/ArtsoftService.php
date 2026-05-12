@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector;
+namespace FranciscoCardoso\ArtsoftConnector;
 
-use Feijosul\ArtsoftConnector\Services\ArtsoftService as BaseArtsoftService;
+use FranciscoCardoso\ArtsoftConnector\Services\ArtsoftService as BaseArtsoftService;
 use Psr\Log\LoggerInterface;
 
 /**
- * @deprecated Use Feijosul\ArtsoftConnector\Services\ArtsoftService instead.
+ * @deprecated Use FranciscoCardoso\ArtsoftConnector\Services\ArtsoftService instead.
  */
 class ArtsoftService extends BaseArtsoftService
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector;
+namespace FranciscoCardoso\ArtsoftConnector;
 
-use Feijosul\ArtsoftConnector\Contracts\ArtsoftServiceInterface;
-use Feijosul\ArtsoftConnector\Services\ArtsoftService;
+use FranciscoCardoso\ArtsoftConnector\Contracts\ArtsoftServiceInterface;
+use FranciscoCardoso\ArtsoftConnector\Services\ArtsoftService;
 use Psr\Log\LoggerInterface;
 
 final class Artsoft

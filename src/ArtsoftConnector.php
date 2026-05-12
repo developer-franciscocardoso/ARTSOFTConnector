@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector;
+namespace FranciscoCardoso\ArtsoftConnector;
 
 use CurlHandle;
 use Exception;
-use Feijosul\ArtsoftConnector\Contracts\ConnectorInterface;
+use FranciscoCardoso\ArtsoftConnector\Contracts\ConnectorInterface;
 
 final class ArtsoftConnector implements ConnectorInterface
 {

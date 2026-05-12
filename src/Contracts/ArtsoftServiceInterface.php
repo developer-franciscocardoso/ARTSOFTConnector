@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Contracts;
+namespace FranciscoCardoso\ArtsoftConnector\Contracts;
 
-use Feijosul\ArtsoftConnector\DTO\Output\RequestResultDTO;
+use FranciscoCardoso\ArtsoftConnector\DTO\Output\RequestResultDTO;
 
 interface ArtsoftServiceInterface
 {

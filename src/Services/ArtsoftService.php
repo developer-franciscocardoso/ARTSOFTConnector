@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Services;
+namespace FranciscoCardoso\ArtsoftConnector\Services;
 
-use Feijosul\ArtsoftConnector\Contracts\ArtsoftServiceInterface;
-use Feijosul\ArtsoftConnector\Contracts\ConnectorInterface;
-use Feijosul\ArtsoftConnector\DTO\Output\RequestResultDTO;
-use Feijosul\ArtsoftConnector\Exceptions\ConfigurationException;
-use Feijosul\ArtsoftConnector\Exceptions\ConnectionException;
-use Feijosul\ArtsoftConnector\Support\LegacyConnectorAdapter;
+use FranciscoCardoso\ArtsoftConnector\Contracts\ArtsoftServiceInterface;
+use FranciscoCardoso\ArtsoftConnector\Contracts\ConnectorInterface;
+use FranciscoCardoso\ArtsoftConnector\DTO\Output\RequestResultDTO;
+use FranciscoCardoso\ArtsoftConnector\Exceptions\ConfigurationException;
+use FranciscoCardoso\ArtsoftConnector\Exceptions\ConnectionException;
+use FranciscoCardoso\ArtsoftConnector\Support\LegacyConnectorAdapter;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

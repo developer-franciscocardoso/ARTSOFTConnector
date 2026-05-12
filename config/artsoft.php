@@ -24,7 +24,7 @@ return [
     |--------------------------------------------------------------------------
     | The default company key to use when none is specified.
     */
-    'default_company' => (getenv('ARTSOFT_DEFAULT_COMPANY') ?: 'Feijosul' . date('Y')),
+    'default_company' => (getenv('ARTSOFT_DEFAULT_COMPANY') ?: 'FranciscoCardoso' . date('Y')),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     | - enabled: Set to false to temporarily disable the company.
     */
     'companies' => [
-        'Feijosul' . date('Y') => [
+        'FranciscoCardoso' . date('Y') => [
             'db'      => (getenv('ARTSOFT_DB') ?: 'FS28'),
             'port'    => (getenv('ARTSOFT_PORT') ?: '2026'),
             'enabled' => true,

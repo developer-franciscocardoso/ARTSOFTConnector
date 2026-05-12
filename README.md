@@ -1,4 +1,4 @@
-# feijosul/artsoft-connector
+# francisco-cardoso/artsoft-connector
 
 Framework-agnostic PHP package for connecting to ARTSOFT.
 
@@ -11,7 +11,26 @@ Framework-agnostic PHP package for connecting to ARTSOFT.
 ## Install
 
 ```bash
-composer require feijosul/artsoft-connector
+composer require francisco-cardoso/artsoft-connector
+```
+
+For local workspace development (for example from ARTSOFTCustomer), use a path repository:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../ARTSOFTConnector",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "require": {
+    "francisco-cardoso/artsoft-connector": "^1.0"
+  }
+}
 ```
 
 ## Usage
@@ -21,7 +40,7 @@ composer require feijosul/artsoft-connector
 
 declare(strict_types=1);
 
-use Feijosul\ArtsoftConnector\Artsoft;
+use FranciscoCardoso\ArtsoftConnector\Artsoft;
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -34,10 +53,10 @@ var_dump($result->toArray());
 
 ## Main API
 
-- `Feijosul\ArtsoftConnector\Artsoft::create()`
-- `Feijosul\ArtsoftConnector\Contracts\ArtsoftServiceInterface`
-- `Feijosul\ArtsoftConnector\Services\ArtsoftService`
-- `Feijosul\ArtsoftConnector\DTO\Output\RequestResultDTO`
+- `FranciscoCardoso\ArtsoftConnector\Artsoft::create()`
+- `FranciscoCardoso\ArtsoftConnector\Contracts\ArtsoftServiceInterface`
+- `FranciscoCardoso\ArtsoftConnector\Services\ArtsoftService`
+- `FranciscoCardoso\ArtsoftConnector\DTO\Output\RequestResultDTO`
 
 ## Tooling
 
@@ -45,3 +64,8 @@ var_dump($result->toArray());
 vendor/bin/phpunit --configuration phpunit.xml
 vendor/bin/phpstan analyse -c phpstan.neon
 ```
+
+## Documentation
+
+- Full usage and expected example outputs: `docs/usage-and-examples.md`
+- Runnable example scripts: `examples/basic.php`, `examples/advanced.php`, `examples/custom_connector.php`

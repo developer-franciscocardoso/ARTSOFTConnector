@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Tests\Unit;
+namespace FranciscoCardoso\ArtsoftConnector\Tests\Unit;
 
 use Exception;
-use Feijosul\ArtsoftConnector\ArtsoftConnector;
+use FranciscoCardoso\ArtsoftConnector\ArtsoftConnector;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 

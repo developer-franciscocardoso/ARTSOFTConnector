@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Support;
+namespace FranciscoCardoso\ArtsoftConnector\Support;
 
-use Feijosul\ArtsoftConnector\ArtsoftConnector;
-use Feijosul\ArtsoftConnector\Contracts\ConnectorInterface;
-use Feijosul\ArtsoftConnector\Exceptions\ConfigurationException;
+use FranciscoCardoso\ArtsoftConnector\ArtsoftConnector;
+use FranciscoCardoso\ArtsoftConnector\Contracts\ConnectorInterface;
+use FranciscoCardoso\ArtsoftConnector\Exceptions\ConfigurationException;
 
 final class LegacyConnectorAdapter implements ConnectorInterface
 {

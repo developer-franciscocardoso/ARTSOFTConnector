@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Exceptions;
+namespace FranciscoCardoso\ArtsoftConnector\Exceptions;
 
 class ConnectionException extends PackageException {}

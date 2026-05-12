@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Feijosul\ArtsoftConnector\Tests\Unit;
+namespace FranciscoCardoso\ArtsoftConnector\Tests\Unit;
 
-use Feijosul\ArtsoftConnector\Artsoft;
-use Feijosul\ArtsoftConnector\Contracts\ArtsoftServiceInterface;
+use FranciscoCardoso\ArtsoftConnector\Artsoft;
+use FranciscoCardoso\ArtsoftConnector\Contracts\ArtsoftServiceInterface;
 use PHPUnit\Framework\TestCase;
 
 final class SmokeTest extends TestCase
