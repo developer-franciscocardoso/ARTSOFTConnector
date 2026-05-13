@@ -3,3 +3,9 @@ parameters:
     paths:
         - src
         - tests
+    ignoreErrors:
+        -
+            message: '#^Function config_path not found\.$#'
+            paths:
+                - src/Console/Commands/PublishConfigCommand.php
+                - src/ServiceProviders/Laravel/ArtsoftLaravelServiceProvider.php

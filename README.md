@@ -72,6 +72,36 @@ $result = $service->request('ArtDB/_DbTables', '<root/>');
 var_dump($result->toArray());
 ```
 
+## Laravel
+
+The package is framework-agnostic, but ships with optional Laravel support.
+
+The service provider is auto-discovered via Composer. If you have auto-discovery disabled, register it manually in `bootstrap/providers.php`:
+
+```php
+FranciscoCardoso\ArtsoftConnector\ServiceProviders\Laravel\ArtsoftLaravelServiceProvider::class,
+```
+
+To publish the config file to `config/artsoft.php`, run:
+
+```bash
+php artisan artsoft:publish
+```
+
+To overwrite an already-published config file:
+
+```bash
+php artisan artsoft:publish --force
+```
+
+Alternatively, use the standard Laravel vendor publish tag:
+
+```bash
+php artisan vendor:publish --tag=artsoft-config
+```
+
+Once published, the config keys are available via `config('artsoft.*')` and can also be overridden with environment variables (see `config/artsoft.php` for the full list).
+
 ## Main API
 
 - `FranciscoCardoso\ArtsoftConnector\Artsoft::create()`
