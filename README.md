@@ -33,6 +33,27 @@ For local workspace development (for example from ARTSOFTCustomer), use a path r
 }
 ```
 
+## Config
+
+The package ships with a reusable PHP config file at `config/artsoft.php`.
+
+If you want to copy that file into your own application, use the framework-agnostic publisher helper:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use FranciscoCardoso\ArtsoftConnector\ServiceProviders\ArtsoftConnectorServiceProvider;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$provider = new ArtsoftConnectorServiceProvider();
+$provider->publishConfig(__DIR__ . '/config/artsoft.php');
+```
+
+You can also load the bundled file directly with `Artsoft::fromConfigFile()` or require your own copied config file and pass the resulting array to `Artsoft::create()`.
+
 ## Usage
 
 ```php
